@@ -158,12 +158,12 @@ exports.nouns = [
 ];
 
 exports.adverbs = [
-  'very',
+  'greatly',
+  'obviously',
+  'poorly',
   'so',
   'so very',
-  'greatly',
-  'poorly',
-  'obviously',
+  'very',
 ];
 
 exports.random = function() {
