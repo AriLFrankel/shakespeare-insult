@@ -161,9 +161,9 @@ adverbs = [
   'very',
   'so',
   'so very',
-  'greatly',
   'poorly',
   'obviously',
+  'greatly',
 ];
 
 exports.random = function() {
