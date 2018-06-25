@@ -157,7 +157,7 @@ exports.nouns = [
   'wagtail'
 ];
 
-adverbs = [
+exports.adverbs = [
   'very',
   'so',
   'so very',
@@ -167,7 +167,7 @@ adverbs = [
 ];
 
 exports.random = function() {
-  return ['verbs', 'adjectives','abverbs', 'nouns'].map(function(type) {
+  return ['verbs', 'adverbs', 'adjectives', 'nouns'].map(function(type) {
     const entry = exports[type] || [];
     return (entry || [])[Math.floor(Math.random() * entry.length)];
   }).join(' ').replace('  ', ' ');
