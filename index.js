@@ -167,8 +167,8 @@ exports.adverbs = [
 ];
 
 exports.random = function() {
-  return ['verbs', 'adverbs', 'adjectives', 'nouns'].map(function(type) {
+  return 'You ' + ['verbs', 'adverbs', 'adjectives', 'nouns'].map(function(type) {
     const entry = exports[type] || [];
     return (entry || [])[Math.floor(Math.random() * entry.length)];
-  }).join(' ').replace('  ', ' ');
+  }).join(' ').replace('  ', ' ') + '!';
 };
