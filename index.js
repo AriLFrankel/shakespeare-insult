@@ -166,8 +166,11 @@ adverbs = [
   'greatly',
 ];
 
+exports.cockneyNouns = ["duffer","eejit","git","Gordon Bennett","gormless","minger","munter","muppet","naff","nancy","nosey parker","nutter", "pillock","pish","piss-artist","plonker","po-faced","poxy","prat","scrubber","shite","trollop","tyke","uphill gardener","wally","wazzack"];
+
 exports.random = function() {
-  return ['verbs', 'adjectives','abverbs', 'nouns'].map(function(type) {
+  const nouns = Math.round(Math.random()) ? 'cockneyNouns' : 'nouns';
+  return ['verbs', 'adjectives','abverbs', nouns].map(function(type) {
     const entry = exports[type] || [];
     return (entry || [])[Math.floor(Math.random() * entry.length)];
   }).join(' ').replace('  ', ' ');
